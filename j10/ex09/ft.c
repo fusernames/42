@@ -6,7 +6,7 @@
 /*   By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/25 10:23:22 by alcaroff          #+#    #+#             */
-/*   Updated: 2017/07/26 09:50:28 by alcaroff         ###   ########.fr       */
+/*   Updated: 2017/07/26 16:09:20 by alcaroff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ int		ft_strcmp(char *s1, char *s2)
 	return (s1[i] - s2[i]);
 }
 
-long	ft_atoi(char *str)
+int		ft_atoi(char *str)
 {
 	int		i;
-	long	result;
+	int		result;
 	int		is_negative;
 
 	i = 0;
@@ -64,12 +64,17 @@ long	ft_atoi(char *str)
 	return (result);
 }
 
-void	ft_putnbr(long nb)
+void	ft_putnbr(int nb)
 {
 	char	tab[99];
 	int		i;
 
 	i = 0;
+	if (nb == -2147483648)
+	{
+		ft_putstr("-2147483648");
+		return ;
+	}
 	if (nb < 0)
 	{
 		nb = -nb;

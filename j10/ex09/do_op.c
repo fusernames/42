@@ -6,7 +6,7 @@
 /*   By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/24 21:08:52 by alcaroff          #+#    #+#             */
-/*   Updated: 2017/07/26 09:59:40 by alcaroff         ###   ########.fr       */
+/*   Updated: 2017/07/26 16:27:23 by alcaroff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include "ft.h"
 #include "ft_opp.h"
 
-long	ft_usage(long a, long b)
+int		ft_usage(int a, int b)
 {
 	a = 0;
 	b = 0;
@@ -30,10 +30,10 @@ void	ft_stop(char op)
 		ft_putstr("Stop : modulo by zero\n");
 }
 
-long	ft_calculate(char *op, long a, long b)
+int		ft_calculate(char *op, int a, int b)
 {
 	int		i;
-	long	result;
+	int		result;
 
 	i = 0;
 	if ((ft_strcmp(op, "%") == 0 || ft_strcmp(op, "/") == 0) && b == 0)

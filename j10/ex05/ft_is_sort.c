@@ -6,14 +6,15 @@
 /*   By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/22 17:14:21 by alcaroff          #+#    #+#             */
-/*   Updated: 2017/07/26 10:02:17 by alcaroff         ###   ########.fr       */
+/*   Updated: 2017/07/26 16:29:28 by alcaroff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_is_sort(int *tab, int lenght, int (*f)(int, int))
 {
 	int	i;
-	int sort;
+	int sort1;
+	int sort2;
 
 	i = 0;
 	sort1 = 1;

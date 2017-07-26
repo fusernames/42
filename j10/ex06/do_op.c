@@ -6,16 +6,15 @@
 /*   By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/24 21:08:52 by alcaroff          #+#    #+#             */
-/*   Updated: 2017/07/25 12:42:45 by alcaroff         ###   ########.fr       */
+/*   Updated: 2017/07/26 09:54:21 by alcaroff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "calculator.h"
 #include "ft.h"
 #include "ft_opp.h"
-#include <stdio.h>
 
-int		ft_usage(int a, int b)
+long	ft_usage(long a, long b)
 {
 	a = 0;
 	b = 0;
@@ -31,10 +30,10 @@ void	ft_stop(char op)
 		ft_putstr("Stop : modulo by zero\n");
 }
 
-int		ft_calculate(char *op, int a, int b)
+long	ft_calculate(char *op, long a, long b)
 {
 	int		i;
-	int		result;
+	long	result;
 
 	i = 0;
 	if ((ft_strcmp(op, "%") == 0 || ft_strcmp(op, "/") == 0) && b == 0)

@@ -6,7 +6,7 @@
 /*   By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/07/25 10:20:44 by alcaroff          #+#    #+#             */
-/*   Updated: 2017/07/25 11:20:12 by alcaroff         ###   ########.fr       */
+/*   Updated: 2017/07/26 09:52:21 by alcaroff         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 void	ft_putchar(char c);
 void	ft_putstr(char *str);
 int		ft_strcmp(char *s1, char *s2);
-int		ft_atoi(char *str);
+long	ft_atoi(char *str);
 void	ft_putnbr(long nb);
 
 #endif

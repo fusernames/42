@@ -6,12 +6,12 @@
 #    By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/24 16:48:25 by alcaroff          #+#    #+#              #
-#    Updated: 2017/07/25 12:53:54 by alcaroff         ###   ########.fr        #
+#    Updated: 2017/07/26 09:54:34 by alcaroff         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 all:
 	@gcc -o do-op do_op.c calculator.c ft.c
 clean:
-	@rm do-op
+	@rm -f do-op
 re: clean all

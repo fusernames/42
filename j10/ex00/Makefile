@@ -6,7 +6,7 @@
 #    By: alcaroff <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/07/20 20:02:31 by alcaroff          #+#    #+#              #
-#    Updated: 2017/07/25 13:28:13 by alcaroff         ###   ########.fr        #
+#    Updated: 2017/07/25 19:07:26 by alcaroff         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,7 @@ all:
 	ar rc libft.a ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 	ranlib libft.a
 clean:
-	rm ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
+	rm -f ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
 fclean: clean
-	rm libft.a
+	rm -f libft.a
 re: fclean all
